@@ -1,4 +1,4 @@
-﻿Text,AudioFileName
-これはテストです。,audio1
-これもテストです。,audio2
-３番目もてすとです。,audio3
+﻿Text,JapaneseMeaning,AudioFileName,JapaneseMeaningAudio
+This is a test.,これはテストです。,Audio1.mp3,JapaneseAudio1.mp3
+This is also a test., これもテストです。 ,Audio2.mp3,JapaneseAudio2.mp3
+The 3rd one is also a test., ３番目もテストです。 ,Audio3.mp3,JapaneseAudio3.mp3
