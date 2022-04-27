@@ -43,7 +43,8 @@ print(length)
 #選択する前にこのURLをアクセスして試して見る事ができます。
 # URL：　https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices
 #利用される音声のバージョンによって速度やピッチ（声の高さ・低さ）を調整出来ないものはありますのでご了承ください。(V3がつく音声）
-#選択オプションはご利用IDEのTerminalに表示されます。
+#もし音声の選択機能を使いたいのであれば、７３列目の　voice= 'en-US_OliviaV3Voice'　を　voice= answers["Accent"]　に変更してください。
+#選択オプションはご利用IDEのTerminalに表示されます。矢印キーを使って選択し、Enterキーで決定してください。
 questions = [
   inquirer.List('Accent',
                 message="どんな発音で聞きたいですか？矢印キーを使って選択してください。",
@@ -69,7 +70,7 @@ for x in range(length):
 
     # 英語の音声ファイル作成
     with open(df.AudioFileName[x], 'wb') as audio_file: 
-        res = tts.synthesize(df.Text[x], accept='audio/mp3', voice= answers["Accent"]).get_result()
+        res = tts.synthesize(df.Text[x], accept='audio/mp3', voice= 'en-US_OliviaV3Voice').get_result()
         audio_file.write(res.content)
               
     #日本語の意味を音声ファイルとしての作成
