@@ -1,4 +1,4 @@
-# Tech Dojo 「Watsonが代わりに発言する！Text to Speechハンズオン」v2
+# Tech Dojo 「Watsonが代わりに発言する！Text to Speechセッション」v2
 
 手順：
 1.　auth.json ファイルにIBM　CloudからWatson Text To SpeechのAPI　KeyとURLを入力します。
