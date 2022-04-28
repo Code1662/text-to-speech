@@ -6,7 +6,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
 print('start')
 # 認証情報
-with open("./auth.json",'r') as auth:
+with open("auth.json",'r') as auth:
     auth_info = json.load(auth)
     apikey= auth_info['apikey']
     url=auth_info['url']
