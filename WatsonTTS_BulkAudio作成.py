@@ -77,7 +77,7 @@ for x in range(length):
     with open(df.JapaneseMeaningAudio[x], 'wb') as audio_file2: 
         res = tts.synthesize(df.JapaneseMeaning[x], accept='audio/mp3', voice='ja-JP_EmiV3Voice').get_result()
         audio_file2.write(res.content)
-        print('オーディオファイルは「text-to-speech-main」フォルダーに保存されています。')
+        print('オーディオファイルはワーキングフォルダーに保存されています。')
 
 #完成してファイルはユーザーの~/text-to-speech-main/フォルダーに保存されます。
 print('end')
